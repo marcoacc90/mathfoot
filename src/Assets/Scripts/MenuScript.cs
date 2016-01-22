@@ -18,7 +18,8 @@ public class MenuScript : MonoBehaviour
 	}
 
 	void Update () {
-	
+		if (Input.GetKeyDown (KeyCode.Escape))
+			Application.LoadLevel("Start");
 	}
 	
 	void OnGUI() {

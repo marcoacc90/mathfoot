@@ -423,6 +423,12 @@ public class GameControl : MonoBehaviour {
 			break;
 		}
 		DrawScore();
+
+		if(Input.GetKeyDown(KeyCode.Escape)) {
+			Time.timeScale = 1;
+			Application.LoadLevel("Menu");
+		}
+
 	}
 	
 	void OnGUI() {

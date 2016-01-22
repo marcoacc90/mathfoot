@@ -21,6 +21,8 @@ public class WinScript : MonoBehaviour {
 	}
 
 	void Update () {
+		if(Input.GetKeyDown(KeyCode.Escape))
+			Application.LoadLevel("Game");
 
 	}
 

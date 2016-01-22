@@ -6,6 +6,7 @@ private var zmax : float = 3.5;
 private var zmin : float = 1.4;
 private var	v_current : Vector3;
 private var vx : float;
+private var vy : float;
 private var vz : float;
 private var x : float;
 private var z : float;
@@ -33,6 +34,7 @@ function Start () {
 	v_current = Input.acceleration;
 	vx = v_current.x;
 	vz = v_current.z;
+	vy = transform.position.y;
 	vx = ValidData(ax_max,ax_min,vx);
 	vz = ValidData(az_max,az_min,vz);
 	mx = (xmax-xmin)/(ax_max-ax_min);
@@ -45,6 +47,7 @@ function Update ()
 {
 	transform.position.x = x;	
 	transform.position.z = z;
+	transform.position.y = vy;
 	
 	myTime = myTime + Time.deltaTime;
 	

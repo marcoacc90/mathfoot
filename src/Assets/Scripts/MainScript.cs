@@ -23,10 +23,7 @@ public class MainScript : MonoBehaviour {
 			"Desarrollador:\n" +
 			"Marco A. Contreras Cruz\n" +
 			"Material Externo:\n" +
-			 "- Jugadores por Mixamo\n" + 
-			"Audio:\n" +
-				"- Youtube Audio Library: Dancing on Green Grass, London Bridge, Space Adventure " +
-				" This Old Man por The Green Orbs";
+				"- Jugadores por Mixamo\n (https://www.mixamo.com/)";
 		visible = true;
 	}
 
